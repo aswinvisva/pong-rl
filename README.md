@@ -1,2 +1,6 @@
 # pong-rl
-Using reinforcement learning to beat the classic game "Pong".
+Using deep reinforcement learning to create a Pong AI.
+
+Used reward function shaping to optimize performance of the model, below is the result:
+
+![alt-text](https://github.com/aswinvisva/pong-rl/blob/master/pong.gif)
