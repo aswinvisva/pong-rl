@@ -170,8 +170,6 @@ class PyPong:
 
         if action == 0:
             action = -1
-        elif action == 2:
-            action = 0
 
         self.player1.setActivity(None, action)
 
@@ -191,12 +189,12 @@ class PyPong:
         # Render the text. "True" means anti-aliased text.
         # Black is the color. This creates an image of the
         # letters, but does not put it on the screen
-        text = font.render("PyPong by Beef, modified by Aswin Visva", True, black)
+        text = font.render("Reinforcement Learning Pong by Aswin Visva, original game built by Beef", True, black)
         score1text = font.render(self.player1.score(), True, red)
         score2text = font.render(self.player2.score(), True, blue)
 
         # Put the image of the text on the screen at 250x250
-        self.screen.blit(text, [250, 250])
+        self.screen.blit(text, [50, 300])
         self.screen.blit(score1text, [50, 0])
         self.screen.blit(score2text, [650, 0])
 
